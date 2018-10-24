@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    }
+    
+    header{
+        background: #222831;
+        padding: 1% 2%;
+        
+       
+    }
+    /* menu de pagina */
+    /* header,main, footer,{
+        
+        width: 90%;
+        max-width:100%;
+        margin: 0%;
+
+    } */
+    nav
+    {
+        background: #393e46;
+        overflow: hidden;
+        
+
+    }
+     nav ul {
+        list-style: none;
+    }
+     nav ul li{
+        float:left;
+    }
+     nav ul li a{
+        padding: 10px 20px;
+        display: block;
+        color:#ffff;
+        text-decoration: none;
+        
+    }
+     nav ul li a:hover{
+        background:grey;
+    }
+    a{
+        margin-left: 40px;
+    }
+    /* container de modelo */
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        height: 640px;
+        max-width: 100%;
+       
+    }
+    .box{
+        width: 100%;
+        
+    
+    }
+
+   main{
+    
+       color: aliceblue;
+       margin: 0%;
+       
+   }
+   .uno{
+       background-color: #00adb5;
+       margin: 0%;   
+      
+   }
+
+   .dos{
+       background-color: #393e46;
+       padding-left: 5%;
+     
+
+    }
+
+   .tres{
+       background-color: #222831;
+       padding-left:5%;  
+       
+   }
+   .dos .tres{
+       float: left;
+   }
+
+   footer{
+    color: aliceblue;
+    width: 100%;
+    background: #00adb5;
+   }
+
+    /*cambio a más grande*/
+@media screen and (min-width: 450px){
+    .uno, .dos{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 550px){
+    .uno{
+        width: 100%;
+    }
+    .dos{
+        width: 45%;
+       
+    }
+    .tres{
+        width: 45%;
+       
+       
+    }
+    
+   
+}
+
+@media screen and (min-width: 1800px){
+    .container{
+        width: 1800px;
+        
+    }
+}
+
+.tres ul{
+    list-style-type:none;
+}
+.dos ul {
+    list-style-type: none; 
+}
+
+.uno div p h1 h2 {
+    justify-content: center;
+}
+
+
+
+.caja {
+    margin:20px auto 40px auto;	
+    border:1px solid #d9d9d9;
+    height:30px;
+    overflow: hidden;
+    width: 230px;
+    position:relative;
+ }
+ select {
+    background:white;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+ }
+ select:focus{ outline: none;}
+ 
+ body ,main ,nav, footer {
+    font-family :  cursive;
+}

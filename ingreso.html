@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mis Perris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/registro.css" />
+    <script src="main.js"></script>
+    <script src="carrucel.js"></script>
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo mis perris">
+
+    </header>
+    <nav>
+        <ul class "menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="a">Servicios</a></li>
+            <li><a href="ingreso.html">Contacto</a></li>
+        </ul>
+
+    </nav>
+    <main>  
+      
+
+        <div class="container">
+          
+
+            <div class=" box uno">
+              <br>
+              <div align="center"><h1>Bienvenido A Mis Perris </h1></div>
+              <div align="center"><h2>Registrate Y Se Parte De Nosotros</h2></div>
+            
+            </div>
+            
+
+            <div class="box dos">
+                    <br>
+                    <form onsubmit="registro()" action="#">
+                        <ul>
+                            
+                            <br></br>
+                            <li> <label ><h3>Nombre completo:</h3></label></li>    
+                            <br>
+                            <li><input type="text" id="nombre" placeholder="Ingrese nombre" required /></li>
+                            <br>
+                            <li><label for="textRut"><h3>Rut:</h3></label> </li>
+                            <br>
+                            <li><input id="txtRut" type="text"
+                                onkeyup="modifyText()" placeholder="Ingrese Rut" required/></li>
+                            <br>
+                            <li><label><h3>Fecha nacimiento:</h3></label></li>
+                            <br>
+                            <li><input  max="2000-12-31" type="date" id="fecha" required /></li>
+                            <br>
+                            <li><label><h3>Correo electronico:</h3></label></li>
+                            <br>
+                            <li><input type="email" id="correo" placeholder="Ingrese Correo" required /></li>
+                            
+                        </ul>    
+                    </form>
+                       
+                        <script src="main.js"></script>
+                        
+             
+              
+
+            </div>
+
+            <div class="box tres">
+              <br>
+                    <form onsubmit="registro()" action="#">
+                        <ul>
+                            
+                            <br></br>
+                            <li><label for="numero"><h3>Telefono:</h3></label></li>
+                            <br>
+                            <li><input  type="tel" id="numero" placeholder="Ingrese Numero Celular" minlength="9" maxlength="9" required/></li>
+                            <br>
+                            <li><label for="txtRegion"><h3>Region</h3></label></li>
+                            <br>
+                            <li><label class="caja"><select id="txtRegion" oninput="selectCity()">     
+                                </select></label></li>
+                            <br>
+                            <li><label for="txtCity"><h3>Ciudad</h3></label></li>
+                            <br>
+                            <li> <label class="caja"> <select id="txtCity">
+
+                                </select></label></li>
+                            <br>
+                            <li><label for="sltOptions"><h3>Tipo De Vivienda</h3></label>
+                            <br>
+                            <li> <label class="caja"><select id="sltOptions">
+                                    <option>Departamento</option>
+                                    <option>Casa Con Patio Grande</option>
+                                    <option>Casa Sin Patio</option>
+                                    <option>Casa Con Patio Pequeño</option>
+                                </select></label></li>
+                            <br>
+                            <li><button><h3>Ingresar</h3></button></li>
+                        </ul>    
+                    </form>
+                        <script src="ciudad.js"></script>
+                        <script src="main.js"></script>
+                        
+
+            </div>
+            <footer>
+                    <div  align="center" class="box cuatro">
+                        <p>Create by Frack SA</p>
+                    </div>
+            
+            </footer>
+
+        </div>
+
+
+    </main>
+    
+    
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mis Perris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+    <script src="main.js"></script>
+    <script src="carrucel.js"></script>
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 900px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        
+        
+        
+        
+        
+        .active:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 2.5s;
+          animation-name: fade;
+          animation-duration: 2.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .8} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .8} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 1000px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo mis perris">
+
+    </header>
+    <nav>
+        <ul class "menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="https://www.youtube.com/watch?v=yrwpicOITsk"  >Servicios</a></li>
+            <li><a href="ingreso.html">Contacto</a></li>
+        </ul>
+
+    </nav>
+    <main>  
+      
+
+        <div class="container">
+          
+
+            <div class=" box uno">
+              <br>
+            
+
+                    <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                              
+                                   <img src="img/adoptados/apoloo/Apolo-200.jpg" sizes="50vw"
+                                   srcset="img/adoptados/apoloo/Apolo-100.jpg 100w, img/adoptados/apoloo/Apolo-200.jpg 200w,
+                                   img/adoptados/apoloo/Apolo-400.jpg 400w, img/adoptados/apoloo/Apolo-800.jpg 800w,
+                                   img/adoptados/apoloo/Apolo-1000.jpg 1000w" alt="Apolo El No Huerfano" style="width:100%">
+                              
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              
+                                    <img src="img/adoptados/Duque/Duque-200.jpg" sizes="50vw"
+                                    srcset="img/adoptados/apoloo/Apolo-100.jpg 100w, img/adoptados/apoloo/Apolo-200.jpg 200w,
+                                    img/adoptados/Duque/Duque-400.jpg 400w, img/adoptados/Duque/Duque-800.jpg 800w,
+                                    img/adoptados/Duque/Duque-1000.jpg 1000w"
+                                     alt="Duque El No Huerfano" style="width:100%">
+                              
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              
+                                    <img src="img/adoptados/Tom/Tom-200.jpg" sizes="50vw"
+                                    srcset="img/adoptados/Duque/Duque-100.jpg 100w, img/adoptados/Tom/Tom-200.jpg 200w,
+                                    img/adoptados/Tom/Tom-400.jpg 400w, img/adoptados/Tom/Tom-800.jpg 800w,
+                                    img/adoptados/Tom/Tom-1000.jpg 1000w" alt="Tom El No Huerfano" style="width:100%">
+                             
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            <script src="carrucel.js"></script>
+                            
+                            </div>
+                            <br>
+                            <script>
+                                    var slideIndex = 1;
+                                    showSlides(slideIndex);
+                                    
+                                    function plusSlides(n) {
+                                      showSlides(slideIndex += n);
+                                    }
+                                    
+                                    function currentSlide(n) {
+                                      showSlides(slideIndex = n);
+                                    }
+                                    
+                                    function showSlides(n) {
+                                      var i;
+                                      var slides = document.getElementsByClassName("mySlides");
+                                      
+                                      if (n > slides.length) {slideIndex = 1}    
+                                      if (n < 1) {slideIndex = slides.length}
+                                      for (i = 0; i < slides.length; i++) {
+                                          slides[i].style.display = "none";  
+                                      }
+                                      
+                                      slides[slideIndex-1].style.display = "block";  
+                                     
+                                    }
+                                    </script>
+
+
+
+            
+                </div>
+            
+
+            <div class="box dos">
+              
+               <br>
+               <div align="center">
+
+               <h1>Cachorros Rescatados</h1>
+              </div>
+               <br></br>   
+               
+                
+               <div id="uno"><img src="img/rescatados/Bigotes.jpg" class="galery" width="300" height="250"
+                   alt="Bigotes el perro"></div>
+               
+            
+               <div id="dos"><img src="img/rescatados/Chocolate.jpg" class="galery" width="300" height="250"
+                  alt="Chocolatito"></div>
+               
+                
+              
+               <div id="tres" ><img src="img/rescatados/Luna.jpg" class="galery" width="300" height="250"
+                   alt="La chora luna"></div>
+                 
+               
+               <div id="cuatro "><img src="img/rescatados/Maya.jpg" class="galery" width="300" height="250"
+                   alt="Maya La perra"></div>
+                 
+               
+              
+               <div id="cinco"><img src="img/rescatados/Oso.jpg" class="galery"  width="300" height="250"
+                 alt="osito"></div>
+               
+                              
+               <div id="seis"> <img src="img/rescatados/Pexel.jpg" class="galery" width="300" height="250"
+                  alt="pexelcito"></div>
+               <div id="siete"><img src="img/pugg.jpg" alt="pugg" class="galery" width="300" height="250"></div>  
+                
+               <div id="ocho"><img src="img/cachorro.jpg" alt="cachorrito" class="galery" width="300" height="250"></div>
+               <br>
+
+              </table>  
+               <br>
+              
+
+            </div>
+
+            <div class="box tres">
+              <br>
+              <div><p>En mis perris rescatamos perros en situacion de peligro y/o abandono. Los rehabilitamos y los preparamos para buscar un hogar. Somos una organizacion sin fines de lucro solo por el amor a los animales</p></div>
+ 
+                        
+
+            </div>
+            <footer>
+                    <div align="center" class="box cuatro">
+                        <p>Create by Frac SA</p>
+                    </div>
+            </footer>
+
+        </div>
+
+
+    </main>
+    
+    
+
+
+
+
+
+
+</body>
+</html>
